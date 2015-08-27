@@ -1,0 +1,31 @@
+{
+  "name": "anotherbutton.css",
+  "description": "another button",
+  "license": "MIT",
+  "homepage": "https://github.com/anothercss/anotherbutton.css",
+  "authors": [
+    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anothercss/anotherbutton.css.git"
+  },
+  "main": [
+    "anotherbutton.css",
+    "dist/anotherbutton.css",
+    "dist/anotherbutton.min.css"
+  ],
+  "keywords": [
+    "css",
+    "grid",
+    "postcss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "gulpfile.js",
+    "package.json",
+    "gulpfile.js"
+  ]
+}
