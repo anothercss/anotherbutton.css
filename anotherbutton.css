@@ -1,0 +1,133 @@
+/*! anotherbutton.css | MIT License */
+
+
+:root {
+  /* Colors form clrs.cc */
+  --navy: #001F3F;
+  --blue: #0074D9;
+  --aqua: #7FDBFF;
+  --teal: #39CCCC;
+  --olive: #3D9970;
+  --green: #2ECC40;
+  --lime: #01FF70;
+  --yellow: #FFDC00;
+  --orange: #FF851B;
+  --red: #FF4136;
+  --fuchsia: #F012BE;
+  --purple: #B10DC9;
+  --maroon: #85144B;
+  --white: #fff;
+  --silver: #ddd;
+  --gray: #aaa;
+  --black: #111;
+
+  --default-color: var(--gray);
+  --default-hover-color: #777;
+  --primary-color: var(--aqua);
+  --primary-hover-color:  var(--blue);
+  --disabled-color: var(--silver);
+  --radius: 3px;
+}
+
+/* Default Button */
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+
+  color: #fff;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  background-color: var(--default-color);
+
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+
+  transition: background-color 0.2s ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--default-hover-color);
+
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:active {
+
+}
+
+/* Primary buttons */
+.btn--primary {
+  background-color: var(--primary-color);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--primary-hover-color);
+
+  transition: background-color 0.3s ease-in;
+}
+
+/* Disabled buttons */
+.btn[disabled],
+.btn--disabled,
+.btn--disabled:hover,
+.btn--disabled:focus {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+/* Button size */
+.btn--small {
+  font-size: 0.7em;
+  letter-spacing: 0.06em;
+}
+
+.btn--large {
+  font-size: 1.3em;
+  letter-spacing: 0.025em;
+}
+
+/* Ghost buttons */
+.btn--ghost {
+  background-color: transparent;
+  transition: color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.btn.btn--ghost {
+  color: var(--default-color);
+  border-color: var(--default-color);
+}
+
+.btn.btn--ghost:hover,
+.btn.btn--ghost:focus {
+  color: var(--default-hover-color);
+  border-color: var(--default-hover-color);
+  background-color: transparent;
+  transition: color 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.btn--primary.btn--ghost {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn--primary.btn--ghost:hover,
+.btn--primary.btn--ghost:focus {
+  color: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+  background-color: transparent;
+  transition: color 0.2s ease-in, border-color 0.2s ease-in;
+}

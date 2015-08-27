@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>anotherbutton.css</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="css/anotherbutton.css">
+  <style>
+    html,
+    body {
+      font-size: 1em;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    hr {
+      border: none;
+      background-color: #ddd;
+      height: 1px;
+    }
+
+    section {
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>anotherbutton.css</h1>
+    <hr>
+    <section>
+      <h2>default buttons</h2>
+      <a class="btn" href="#!">link element</a>
+      <button class="btn" type="button" name="button">button element</button>
+      <input class="btn" type="button" name="name" value="input button element">
+      <input class="btn" type="submit" name="name" value="input submit element">
+      <input class="btn" type="reset" name="name" value="input reset element">
+    </section>
+    <hr>
+    <section>
+      <h2>primary buttons</h2>
+      <a class="btn btn--primary" href="#!">link element</a>
+      <button class="btn btn--primary" type="button" name="button">button element</button>
+      <input class="btn btn--primary" type="button" name="name" value="input button element">
+      <input class="btn btn--primary" type="submit" name="name" value="input submit element">
+      <input class="btn btn--primary" type="reset" name="name" value="input reset element">
+    </section>
+    <hr>
+    <section>
+      <h2>disbaled buttons</h2>
+      <a class="btn btn--disabled" href="#!">link element</a>
+      <button class="btn" type="button" name="button" disabled>button element</button>
+      <input class="btn" type="button" name="name" value="input button element" disabled>
+      <input class="btn" type="submit" name="name" value="input submit element" disabled>
+      <input class="btn" type="reset" name="name" value="input reset element" disabled>
+    </section>
+    <hr>
+    <section>
+      <h2>ghost buttons</h2>
+      <a class="btn btn--ghost" href="#!">default ghost button</a>
+      <button class="btn btn--primary btn--ghost" type="button" name="button">primary ghost button</button>
+    </section>
+    <hr>
+    <section>
+      <h2>buttons sizes</h2>
+      <a class="btn btn--small" href="#!">small</a>
+      <a class="btn" href="#!">default</a>
+      <a class="btn btn--large" href="#!">large</a>
+      <input class="btn btn--ghost btn--small" type="submit" name="name" value="default ghost small">
+      <input class="btn btn--primary btn--ghost btn--large" type="reset" name="name" value="primary ghost large">
+    </section>
+  </div>
+
+</body>
+
+</html>

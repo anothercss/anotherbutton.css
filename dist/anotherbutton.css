@@ -1,0 +1,63 @@
+/*! anotherbutton.css | MIT License */
+.btn
+{line-height: 1;
+
+    display: inline-block;box-sizing: border-box;margin-top: .2em;margin-right: .1em;margin-bottom: .2em;margin-left: .1em;padding-top: .7em;padding-right: 1em;padding-bottom: .7em;padding-left: 1em;transition: background-color .2s ease-out;text-decoration: none;letter-spacing: .025em;text-transform: uppercase;color: #fff;border: 2px solid transparent;border-radius: 3px;background-color: #aaa;
+}
+.btn:focus,
+.btn:hover
+{transition: background-color .3s ease-in;
+
+    background-color: #777;
+}
+.btn--primary
+{
+    background-color: #7fdbff;
+}
+.btn--primary:focus,
+.btn--primary:hover
+{transition: background-color .3s ease-in;
+
+    background-color: #0074d9;
+}
+.btn--disabled,
+.btn--disabled:focus,
+.btn--disabled:hover,
+.btn[disabled]
+{cursor: not-allowed;
+
+    background-color: #ddd;
+}
+.btn--small
+{
+    font-size: .7em;letter-spacing: .06em;
+}
+.btn--large
+{
+    font-size: 1.3em;letter-spacing: .025em;
+}
+.btn--ghost
+{transition: color .2s ease-out,border-color .2s ease-out;
+
+    background-color: transparent;
+}
+.btn.btn--ghost
+{
+    color: #aaa;border-color: #aaa;
+}
+.btn.btn--ghost:focus,
+.btn.btn--ghost:hover
+{transition: color .2s ease-in,border-color .2s ease-in;
+
+    color: #777;border-color: #777;background-color: transparent;
+}
+.btn--primary.btn--ghost
+{
+    color: #7fdbff;border-color: #7fdbff;
+}
+.btn--primary.btn--ghost:focus,
+.btn--primary.btn--ghost:hover
+{transition: color .2s ease-in,border-color .2s ease-in;
+
+    color: #0074d9;border-color: #0074d9;background-color: transparent;
+}
